@@ -1,0 +1,59 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Book Movies</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarScroll">
+      <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item" ngbDropdown>
+          <a class="nav-link" id="navbarScrollingDropdown" role="button" ngbDropdownToggle>Movies</a>
+          <ul class="dropdown-menu" ngbDropdownMenu aria-labelledby="navbarScrollingDropdown">
+            <li><a class="dropdown-item" href="#">Bollywood</a></li>
+            <li><a class="dropdown-item" href="#">Hollywood</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Offers</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarScroll">
+      <ul class="navbar-nav my-2 my-lg-0 navbar-nav-scroll col-sm-12 justify-content-evenly">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#">Bollywood</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Hollywood</a>
+        </li>
+        <li class="nav-item" ngbDropdown>
+          <a class="nav-link" id="navbarScrollingDropdown" role="button" ngbDropdownToggle>Latest</a>
+          <ul class="dropdown-menu" ngbDropdownMenu aria-labelledby="navbarScrollingDropdown">
+            <li><a class="dropdown-item" href="#">Hindi</a></li>
+            <li><a class="dropdown-item" href="#">Marathi</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Coupons</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

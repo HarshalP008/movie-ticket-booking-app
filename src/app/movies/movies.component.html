@@ -1,0 +1,62 @@
+<ngb-carousel>
+  <ng-template ngbSlide *ngFor="let slide of slides">
+    <img class="carousel-Image" src="{{slide.image}}" alt="Slide">
+  </ng-template>
+</ngb-carousel>
+<div class="container">
+  <div class="row mb-2 mt-1">
+    <div class="col-sm-12 card-slider d-flex px-0">
+      <div class="col-12 col-sm-6 col-lg-3 card text-center shadow-sm rounded mt-4 me-lg-4 me-2" *ngFor="let movie of moviesArr, let i=index">
+        <img class="card-img shadow-sm bg-white rounded " src="{{movie.Poster}}" alt="{{movie.Title}}">
+        <div class="card-body">
+          <div class="card-title font-weight-bold">
+            <h6 class="title mb-0">{{movie.Title}}</h6>
+          </div>
+          <div class="bg-light mb-2">
+            <h6 class="card-text text-primary bg-dark">Rating: 7.8</h6>
+
+            <button class="btn btn-sm btn-secondary decBtn" (click)="decQty(movie)"><strong>-</strong></button>
+            <span class="border border-light font-weight-bold shadow-sm px-2 px-md-4 pt-1">{{+ticketQty}}</span>
+            <button class="btn btn-sm btn-secondary incBtn" (click)="incQty(movie)"><strong>+</strong></button>
+
+            <button class="btn btn-info btn-sm p-lg-1 my-1" id="addBtn">Book Tickets</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row my-4">
+    <div class="col-sm-12 d-flex justify-content-evenly align-content-center">
+      <div class="offers col-sm-5">
+        <img class="offer-img" src="../assets/discounts-booking.jpg" alt="offer1">
+      </div>
+      <div class="offers col-sm-5">
+        <img class="offer-img" src="../assets/07-1420631099-image.jpg" alt="offer2">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="footer bg-dark text-center text-light">
+  <div class="container p-4 pb-0">
+      <form>
+        <div class="row justify-content-center">
+          <div class="col-3">
+            <p class="pt-2"><strong>Sign up for our newsletter</strong></p>
+          </div>
+          <div class="col-12 col-md-5">
+            <div class="form-outline mb-4">
+              <input type="email" id="form5Example27" class="form-control" />
+              <label class="form-label" for="form5Example27">Email address</label>
+            </div>
+          </div>
+          <div class="col-2">
+            <button type="submit" class="btn btn-primary mb-4">Subscribe</button>
+          </div>
+        </div>
+      </form>
+  </div>
+  <div class="text-center p-1">
+    <p>© Copyright: <a class="text-warning" href="#">bookmovies.com</a></p>
+    <i class="fa fa-facebook-square text-warning"></i>
+  </div>
+</div>
