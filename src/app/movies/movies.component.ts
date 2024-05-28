@@ -14,13 +14,7 @@ export class MoviesComponent {
     { image: "../assets/banner1.jpg", text: 'Image' },
     { image: "../assets/3591475.jpg", text: 'Image' },
   ];
-  moviesList: any[] = [
-    {
-      "Title": "The Lion King",
-      "Year": "2019",
-      "Runtime": "118 min",
-      "Poster": "https://m.media-amazon.com/images/M/MV5BMjIwMjE1Nzc4NV5BMl5BanBnXkFtZTgwNDg4OTA1NzM@._V1_SX300.jpg"
-    },
+  moviesList: any[] = [    
     {
       "Title": "Mowgli",
       "Year": "2018",
